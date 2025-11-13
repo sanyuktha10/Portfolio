@@ -1,14 +1,18 @@
-/* ======== GLOBAL STYLES ======== */
-/* ======== GLOBAL STYLES ======== */
+/* ======== GLOBAL STYLES (UPDATED FOR HARMONY) ======== */
 :root {
-  --teal: #009688;
-  --orange: #ff7043;
-  --dark-blue: #46617c; /* (NEW) A rich, professional blue for text */
-  --light-blue: #e0f7fa; /* (NEW) A light, airy blue for backgrounds */
-  --bg: #8cd5ee;
-  --text: var(--dark-blue); /* (UPDATED) Use dark blue as default text */
-  --light-text: #5a6a79;
-  --white: #c9f8ce;
+  /* Primary Colors (Deeper, Professional, Energy Focused) */
+  --teal: #00796b; /* Deeper, more professional primary color (Clean Energy) */
+  --orange: #ff5722; /* Vibrant accent color (Energy/Passion) */
+  
+  /* Backgrounds */
+  --dark-blue: #2c3e50; /* Rich Navy/Charcoal for primary text and footer */
+  --light-blue: #e5f3f2; /* Light Mint/Cyan for subtle background sections (Education/Projects) */
+  --bg: #f0f4f7; /* Very light gray/off-white for main body background (Softness) */
+  --white: #ffffff; /* Pure White for all cards and navbar (Crispness) */
+  
+  /* Text & Utility */
+  --text: var(--dark-blue); /* Primary text color */
+  --light-text: #5a6a79; /* Secondary text color */
   --shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   --shadow-hover: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
@@ -44,7 +48,7 @@ h1 {
   /* Dynamic text gradient for a modern feel */
   background: linear-gradient(120deg, var(--teal), var(--orange));
   
-  /* FIX: Added Webkit Prefixes for wider compatibility and removed the non-standard text-fill-color */
+  /* FIX: Added Webkit Prefixes for wider compatibility */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -152,7 +156,8 @@ p {
 
 /* ======== HERO SECTION ======== */
 .hero {
-  background: linear-gradient(120deg, #e0f7fa, #fff8f5);
+  /* Updated gradient to use new light colors */
+  background: linear-gradient(120deg, var(--light-blue), var(--white));
   padding: 100px 10%;
   display: flex;
   align-items: center;
@@ -328,7 +333,8 @@ p {
 }
 
 .skills-grid span {
-  background: #e0f7fa;
+  /* Using a combination of light-blue and teal for badges */
+  background: var(--light-blue);
   color: var(--teal);
   padding: 10px 18px;
   border-radius: 25px;
@@ -386,13 +392,13 @@ p {
 }
 
 .contact-details .fas {
-  color: var(--white);
+  color: var(--orange); /* FIXED: Using orange accent color */
   margin-right: 10px;
   width: 20px;
 }
 
 #contact a {
-  color: var(--white);
+  color: var(--orange); /* FIXED: Using orange accent color */
   text-decoration: none;
   font-weight: 600;
 }
@@ -475,7 +481,7 @@ footer p {
     padding: 60px 5%;
   }
 }
-/* ======== (NEW) MY JOURNEY / GALLERY SECTION ======== */
+/* ======== (NEW) MY JOURNEY / ALTERNATING LAYOUT ======== */
 .section.light-blue-bg {
   background: var(--light-blue);
 }
@@ -484,205 +490,58 @@ footer p {
   text-align: center;
 }
 
-/* Tab Button Styles */
-.tabs {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-bottom: 30px;
+.journey-container {
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.tab-btn {
-  padding: 10px 20px;
-  background: transparent;
-  border: none;
-  border-bottom: 3px solid transparent;
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--light-text);
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.tab-btn:hover {
+.journey-container h3 {
+  font-size: 2rem;
   color: var(--teal);
-}
-
-.tab-btn.active {
-  color: var(--teal);
-  border-bottom: 3px solid var(--orange);
-}
-
-/* Tab Content Styles */
-.tab-content {
-  display: none; /* Hide all tabs by default */
-  animation: fadeIn 0.5s ease;
-}
-
-.tab-content.active {
-  display: block; /* Show the active tab */
-}
-
-.tab-content p {
   text-align: center;
-  font-size: 1.05rem;
-  max-width: 800px;
-  margin: 0 auto 30px auto;
+  margin: 50px 0 30px;
 }
 
-/* Gallery Grid Styles */
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 15px;
+.journey-container h3.journey-divider {
+  border-top: 2px solid #ccecf0;
+  padding-top: 50px;
 }
 
-.gallery-grid img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: var(--shadow);
-  transition: all 0.3s ease;
-}
-
-.gallery-grid img:hover {
-  transform: scale(1.05);
-  box-shadow: var(--shadow-hover);
-}
-
-/* Fade-in Animation */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  
-}
-/* ======== (NEW) WORK EXPERIENCE CARD STYLES ======== */
-
-/* Header with Logo */
-.card-header {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  margin-bottom: 20px;
-  padding-bottom: 15px;
-  border-bottom: 2px solid var(--bg);
-}
-
-.company-logo {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  object-fit: contain;
-  background: white;
-  padding: 5px;
-  border: 1px solid #eee;
-}
-
-.card-header-text {
-  flex: 1;
-}
-
-.card-header-text h3 {
-  margin: 0;
-  color: var(--teal);
-}
-
-.card-header-text p {
-  margin: 0;
-  color: var(--light-text);
-  font-size: 0.95rem;
-}
-
-/* Make lists in trainee cards look good */
-.experience-card h4 {
-  font-size: 1.1rem;
-  color: var(--text);
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.experience-card ul {
-  margin-top: 0;
-}
-
-
-/* Project Showcase (for Hayleys) */
-.project-showcase {
-  margin-top: 20px;
-}
-
-.project-showcase h4 {
-  font-size: 1.2rem;
-  color: var(--orange);
-  margin-bottom: 15px;
-}
-
-.project-item {
-  display: flex;
-  flex-wrap: wrap; /* Allows stacking on mobile */
-  gap: 20px;
-  background: var(--bg);
-  border-radius: 8px;
-  padding: 15px;
-  margin-bottom: 15px;
-  overflow: hidden;
-}
-
-.project-photo {
-  flex-basis: 150px; /* Set a base width for the photo */
-  flex-grow: 1;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 6px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  min-width: 120px;
-}
-
-.project-details {
-  flex-basis: 300px; /* Details take up more space */
-  flex-grow: 2;
-}
-
-.project-details h5 {
-  font-size: 1.15rem;
-  color: var(--teal);
-  margin: 0 0 5px 0;
-}
-
-.project-details p {
-  font-size: 0.95rem;
-  color: var(--light-text);
-  margin: 0 0 10px 0;
-}
-
-/* Site Tags (Sub-category) */
-.site-tags {
+.journey-item {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 10px;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 40px;
+  background: var(--white);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  padding: 30px;
+  overflow: hidden;
+  transition: all 0.3s ease;
 }
 
-.site-tags span {
-  background: var(--teal);
-  color: white;
-  padding: 4px 10px;
-  border-radius: 15px;
-  font-size: 0.85rem;
-  font-weight: 600;
+.journey-item:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-5px);
 }
 
-/* Specific tag colors */
-.site-tags span:nth-child(even) {
-  background: var(--orange);
+.journey-image,
+.journey-text {
+  flex: 1;
+  min-width: 300px; /* This helps with responsiveness */
 }
-.site-tags span:nth-child(1) {
-    background: var(--dark-blue);
+
+.journey-image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.journey-text h4 {
+  font-size: 1.5rem;
+  color: var(--orange);
+  margin-top: 0;
 }
