@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://sanyuktha10.github.io/Portfolio/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://sanyuktha10.github.io/Portfolio/images/profile.jpg</image:loc>
+      <image:caption>Profile — Sanyuktha Akalana Dahanayake</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sanyuktha10.github.io/Portfolio/images/microgrid.jpg</image:loc>
+      <image:caption>Optimized Community Microgrid</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sanyuktha10.github.io/Portfolio/images/cnc.jpg</image:loc>
+      <image:caption>Diagram Drawing Machine (CNC)</image:caption>
+    </image:image>
   </url>
 </urlset>
