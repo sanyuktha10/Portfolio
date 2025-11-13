@@ -545,3 +545,56 @@ footer p {
   color: var(--orange);
   margin-top: 0;
 }
+/* ======== (NEW) WORK EXPERIENCE CARD STYLES (UPDATED FOR SMALL RIGHT-ALIGNED LOGOS) ======== */
+
+/* Header with Logo */
+.card-header {
+  /* No need for complex flex here, text container holds position */
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid var(--bg);
+}
+
+.card-header-text {
+  flex: 1;
+}
+
+.card-header-text h3 {
+  margin: 0;
+  color: var(--teal);
+}
+
+/* New style for the company line to align text and logo */
+.card-header-text p.company-line {
+  display: flex; /* Make this a flex container */
+  justify-content: space-between; /* Pushes the logo to the right */
+  align-items: center;
+  margin: 0;
+  color: var(--light-text);
+  font-size: 0.95rem;
+}
+
+/* The actual logo image style */
+.company-logo {
+  width: 40px; /* Small size */
+  height: 40px; 
+  border-radius: 4px; /* Slight rounding for a clean look */
+  object-fit: contain; /* Ensures the whole logo is visible without cropping */
+  background: transparent; /* Ideal for PNGs */
+  padding: 0; 
+  border: none; 
+}
+
+/* Make lists in trainee cards look good */
+.experience-card h4 {
+  font-size: 1.1rem;
+  color: var(--text);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.experience-card ul {
+  padding-left: 20px;
+  margin-top: 0;
+}
+
+/* (The rest of the experience CSS for project showcase should remain below this block) */
