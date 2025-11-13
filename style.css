@@ -41,12 +41,14 @@ h1 {
   font-size: 3.8rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
-  /* (NEW) Dynamic text gradient for a modern feel */
+  /* Dynamic text gradient for a modern feel */
   background: linear-gradient(120deg, var(--teal), var(--orange));
+  
+  /* FIX: Added Webkit Prefixes for wider compatibility and removed the non-standard text-fill-color */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
+  color: transparent; /* Fallback: text is transparent so the background gradient shows */
 }
 
 h2 {
