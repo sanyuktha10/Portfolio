@@ -559,4 +559,128 @@ footer p {
     opacity: 1;
     transform: translateY(0);
   }
+
+  
+}
+/* ======== (NEW) WORK EXPERIENCE CARD STYLES ======== */
+
+/* Header with Logo */
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid var(--bg);
+}
+
+.company-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: contain;
+  background: white;
+  padding: 5px;
+  border: 1px solid #eee;
+}
+
+.card-header-text {
+  flex: 1;
+}
+
+.card-header-text h3 {
+  margin: 0;
+  color: var(--teal);
+}
+
+.card-header-text p {
+  margin: 0;
+  color: var(--light-text);
+  font-size: 0.95rem;
+}
+
+/* Make lists in trainee cards look good */
+.experience-card h4 {
+  font-size: 1.1rem;
+  color: var(--text);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.experience-card ul {
+  margin-top: 0;
+}
+
+
+/* Project Showcase (for Hayleys) */
+.project-showcase {
+  margin-top: 20px;
+}
+
+.project-showcase h4 {
+  font-size: 1.2rem;
+  color: var(--orange);
+  margin-bottom: 15px;
+}
+
+.project-item {
+  display: flex;
+  flex-wrap: wrap; /* Allows stacking on mobile */
+  gap: 20px;
+  background: var(--bg);
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.project-photo {
+  flex-basis: 150px; /* Set a base width for the photo */
+  flex-grow: 1;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  min-width: 120px;
+}
+
+.project-details {
+  flex-basis: 300px; /* Details take up more space */
+  flex-grow: 2;
+}
+
+.project-details h5 {
+  font-size: 1.15rem;
+  color: var(--teal);
+  margin: 0 0 5px 0;
+}
+
+.project-details p {
+  font-size: 0.95rem;
+  color: var(--light-text);
+  margin: 0 0 10px 0;
+}
+
+/* Site Tags (Sub-category) */
+.site-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.site-tags span {
+  background: var(--teal);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* Specific tag colors */
+.site-tags span:nth-child(even) {
+  background: var(--orange);
+}
+.site-tags span:nth-child(1) {
+    background: var(--dark-blue);
 }
