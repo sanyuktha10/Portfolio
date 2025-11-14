@@ -549,7 +549,7 @@ footer p {
 
 /* 1. Large Logo Styling: Applied to all three logos via company-logo-large class. */
 .company-logo-large {
-  width: 100px; 
+  width: 40px; 
   height: auto; 
   max-height: 50px; /* Limits the vertical size for all logos */
   border-radius: 0;
