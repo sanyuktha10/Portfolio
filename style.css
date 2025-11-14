@@ -482,3 +482,46 @@ footer p {
   }
 }
 
+/* ======== WORK EXPERIENCE CARD STYLES (LOGO LEFT, TEXT STACKED) ======== */
+
+/* 1. Header Structure: Align content side-by-side (Flexbox) and vertically center */
+.card-header {
+  display: flex;
+  align-items: center; /* Vertically centers the logo with the text block */
+  gap: 15px; /* Space between the logo and the text */
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid var(--bg);
+  text-align: left; 
+}
+
+.card-header-text {
+  flex: 1; /* Allows the text block to fill the remaining horizontal space */
+}
+
+/* 2. Small Logo Styling (Uniform Size for all three) */
+.company-logo-small {
+  width: 50px; /* Uniform small size */
+  height: 50px; 
+  border-radius: 4px; /* Slight rounding for a clean look */
+  object-fit: contain; /* Ensures the whole logo fits inside the box */
+  background: transparent;
+  padding: 0; 
+  border: none; 
+}
+
+/* 3. Text Styling (Stacking) */
+
+/* Company Name (h4) - Prominent, Teal color */
+.card-header-text h4 {
+  font-size: 1.2rem; 
+  color: var(--teal);
+  margin: 0 0 2px 0; /* Tight spacing above the designation line */
+}
+
+/* Designation and Dates (p) - Secondary text */
+.card-header-text p {
+  font-size: 0.95rem;
+  color: var(--light-text);
+  margin: 0;
+}
