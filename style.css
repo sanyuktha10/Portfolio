@@ -574,6 +574,7 @@ footer p {
   font-size: 0.95rem;
 }
 
+
 /* The actual logo image style */
 .company-logo {
   width: 80px; /* Small size */
@@ -583,6 +584,64 @@ footer p {
   background: transparent; /* Ideal for PNGs */
   padding: 0; 
   border: none; 
+}
+
+/* Make lists in trainee cards look good */
+.experience-card h4 {
+  font-size: 1.1rem;
+  color: var(--text);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.experience-card ul {
+  padding-left: 20px;
+  margin-top: 0;
+}
+
+/* ======== WORK EXPERIENCE CARD STYLES (UNIFORM LAYOUT) ======== */
+
+/* Header with Logo */
+.card-header {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid var(--bg);
+}
+
+.card-header-text {
+  flex: 1;
+}
+
+/* 1. Large Logo Styling: Applied to all three logos via company-logo-large class. */
+.company-logo-large {
+  width: 100px; 
+  height: auto; 
+  max-height: 50px; /* Limits the vertical size for all logos */
+  border-radius: 0;
+  object-fit: contain;
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+
+/* 2. Specific Card Header Text Styling for the compact look */
+
+/* This targets the Company Name (the h3) to make it prominent */
+.card-header-text h3 {
+  font-size: 1.6rem; 
+  margin: 0;
+  margin-bottom: 5px; /* Pull text closer to the next line */
+  color: var(--teal); 
+}
+
+/* This targets the Job Title and Dates line (p.company-line) */
+.card-header-text p.company-line {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  font-size: 0.95rem; 
+  color: var(--light-text);
+  margin: 0;
+  gap: 10px;
 }
 
 /* Make lists in trainee cards look good */
