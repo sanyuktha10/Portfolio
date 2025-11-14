@@ -481,77 +481,13 @@ footer p {
     padding: 60px 5%;
   }
 }
-/* ======== (NEW) MY JOURNEY / ALTERNATING LAYOUT ======== */
-.section.light-blue-bg {
-  background: var(--light-blue);
-}
-
-#journey h2 {
-  text-align: center;
-}
-
-.journey-container {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.journey-container h3 {
-  font-size: 2rem;
-  color: var(--teal);
-  text-align: center;
-  margin: 50px 0 30px;
-}
-
-.journey-container h3.journey-divider {
-  border-top: 2px solid #ccecf0;
-  padding-top: 50px;
-}
-
-.journey-item {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 30px;
-  margin-bottom: 40px;
-  background: var(--white);
-  border-radius: 12px;
-  box-shadow: var(--shadow);
-  padding: 30px;
-  overflow: hidden;
-  transition: all 0.3s ease;
-}
-
-.journey-item:hover {
-  box-shadow: var(--shadow-hover);
-  transform: translateY(-5px);
-}
-
-.journey-image,
-.journey-text {
-  flex: 1;
-  min-width: 300px; /* This helps with responsiveness */
-}
-
-.journey-image img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 8px;
-  box-shadow: var(--shadow);
-}
-
-.journey-text h4 {
-  font-size: 1.5rem;
-  color: var(--orange);
-  margin-top: 0;
-}
 
 
 /* 1. Large Logo Styling: Applied to all three logos via company-logo-large class. */
 .company-logo-large {
   width: 40px; 
   height: auto; 
-  max-height: 50px; /* Limits the vertical size for all logos */
+  max-height: 30px; /* Limits the vertical size for all logos */
   border-radius: 0;
   object-fit: contain;
   background: transparent;
