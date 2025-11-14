@@ -576,8 +576,8 @@ footer p {
 
 /* The actual logo image style */
 .company-logo {
-  width: 40px; /* Small size */
-  height: 40px; 
+  width: 80px; /* Small size */
+  height: 80px; 
   border-radius: 4px; /* Slight rounding for a clean look */
   object-fit: contain; /* Ensures the whole logo is visible without cropping */
   background: transparent; /* Ideal for PNGs */
