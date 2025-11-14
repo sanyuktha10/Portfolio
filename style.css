@@ -482,72 +482,46 @@ footer p {
   }
 }
 
-/* ======== WORK EXPERIENCE CARD STYLES (CENTERED / ROUNDED LOGO LAYOUT) ======== */
+/* ======== WORK EXPERIENCE CARD STYLES (LEFT-ALIGNED SMALL LOGO LAYOUT) ======== */
 
-/* 1. Header Structure: Center everything and define the card border */
+/* 1. Header Structure: Align content side-by-side and vertically center */
 .card-header {
   display: flex;
-  flex-direction: column; /* Stack logo and text vertically */
-  align-items: center; /* Center horizontally */
-  text-align: center;
+  align-items: center; /* Center logo and text vertically */
+  gap: 15px; /* Space between logo and text */
   margin-bottom: 20px;
   padding-bottom: 15px;
   border-bottom: 2px solid var(--bg);
+  text-align: left; /* Ensure text is left-aligned */
 }
 
 .card-header-text {
-  /* No flex properties needed here anymore, just text alignment */
-  flex: 1;
+  flex: 1; /* Allows text to fill remaining space */
 }
 
-/* 2. Centered Logo Styling (Prominent, Rounded Look) */
-.company-logo-centered {
-  width: 70px; /* Size of the container circle */
-  height: 70px; 
-  border-radius: 50%; /* Makes the container circular */
-  object-fit: contain; /* Ensures the whole logo fits inside the circle */
-  background: var(--light-blue); /* Light background for the logo circle */
-  padding: 5px; /* Padding inside the circle */
-  border: 1px solid #ccc; /* Subtle border for definition */
-  margin-bottom: 15px;
+/* 2. Small Logo Styling (Uniform Size for all three) */
+.company-logo-small {
+  width: 50px; /* Uniform small size */
+  height: 50px; 
+  border-radius: 4px; /* Slight rounding, not a full circle */
+  object-fit: contain; /* Ensures the whole logo fits */
+  background: transparent;
+  padding: 0; 
+  border: none; 
 }
 
 /* 3. Text Styling (Stacking) */
 
-/* Job Title (now h4) - Prominent, Teal color */
+/* Designation/Title (h4) - Prominent, Teal color */
 .card-header-text h4 {
-  font-size: 1.4rem; 
+  font-size: 1.2rem; 
   color: var(--teal);
   margin: 0 0 2px 0; /* Tight spacing */
 }
 
-/* Company Name (p) - Secondary text */
+/* Company Name and Dates (p) - Secondary text */
 .card-header-text p {
-  font-size: 1.0rem;
-  color: var(--text);
-  margin: 0 0 2px 0; /* Tight spacing */
-}
-
-/* Dates (p.dates) - Tertiary text */
-.card-header-text p.dates {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: var(--light-text);
-  font-style: italic;
   margin: 0;
-}
-
-
-/* --- OVERRIDE/RESET PREVIOUS STYLES --- */
-
-/* Reset the original h3 and p.company-line styles so they don't interfere */
-.card-header-text h3 {
-  /* Reset the previous styling to be safe */
-  font-size: 1.4rem; 
-  color: var(--text);
-  margin-bottom: 10px;
-}
-
-.card-header-text p.company-line {
-  /* Disable the flex styling from the right-aligned layout */
-  display: block; 
 }
