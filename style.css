@@ -482,50 +482,72 @@ footer p {
   }
 }
 
+/* ======== WORK EXPERIENCE CARD STYLES (CENTERED / ROUNDED LOGO LAYOUT) ======== */
 
-/* 1. Large Logo Styling: Applied to all three logos via company-logo-large class. */
-.company-logo-large {
-  width: 40px; 
-  height: auto; 
-  max-height: 30px; /* Limits the vertical size for all logos */
-  border-radius: 0;
-  object-fit: contain;
-  background: transparent;
-  padding: 0;
-  border: none;
+/* 1. Header Structure: Center everything and define the card border */
+.card-header {
+  display: flex;
+  flex-direction: column; /* Stack logo and text vertically */
+  align-items: center; /* Center horizontally */
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid var(--bg);
 }
 
-/* 2. Specific Card Header Text Styling for the compact look */
-
-/* This targets the Company Name (the h3) to make it prominent */
-.card-header-text h3 {
-  font-size: 1.6rem; 
-  margin: 0;
-  margin-bottom: 5px; /* Pull text closer to the next line */
-  color: var(--teal); 
+.card-header-text {
+  /* No flex properties needed here anymore, just text alignment */
+  flex: 1;
 }
 
-/* This targets the Job Title and Dates line (p.company-line) */
-.card-header-text p.company-line {
-  display: flex; 
-  justify-content: space-between; 
-  align-items: center;
-  font-size: 0.95rem; 
-  color: var(--light-text);
-  margin: 0;
-  gap: 10px;
+/* 2. Centered Logo Styling (Prominent, Rounded Look) */
+.company-logo-centered {
+  width: 70px; /* Size of the container circle */
+  height: 70px; 
+  border-radius: 50%; /* Makes the container circular */
+  object-fit: contain; /* Ensures the whole logo fits inside the circle */
+  background: var(--light-blue); /* Light background for the logo circle */
+  padding: 5px; /* Padding inside the circle */
+  border: 1px solid #ccc; /* Subtle border for definition */
+  margin-bottom: 15px;
 }
 
-/* Make lists in trainee cards look good */
-.experience-card h4 {
-  font-size: 1.1rem;
+/* 3. Text Styling (Stacking) */
+
+/* Job Title (now h4) - Prominent, Teal color */
+.card-header-text h4 {
+  font-size: 1.4rem; 
+  color: var(--teal);
+  margin: 0 0 2px 0; /* Tight spacing */
+}
+
+/* Company Name (p) - Secondary text */
+.card-header-text p {
+  font-size: 1.0rem;
   color: var(--text);
-  margin-top: 10px;
+  margin: 0 0 2px 0; /* Tight spacing */
+}
+
+/* Dates (p.dates) - Tertiary text */
+.card-header-text p.dates {
+  font-size: 0.9rem;
+  color: var(--light-text);
+  font-style: italic;
+  margin: 0;
+}
+
+
+/* --- OVERRIDE/RESET PREVIOUS STYLES --- */
+
+/* Reset the original h3 and p.company-line styles so they don't interfere */
+.card-header-text h3 {
+  /* Reset the previous styling to be safe */
+  font-size: 1.4rem; 
+  color: var(--text);
   margin-bottom: 10px;
 }
-.experience-card ul {
-  padding-left: 20px;
-  margin-top: 0;
-}
 
-/* (The rest of the experience CSS for project showcase should remain below this block) */
+.card-header-text p.company-line {
+  /* Disable the flex styling from the right-aligned layout */
+  display: block; 
+}
