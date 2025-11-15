@@ -245,20 +245,19 @@ p {
 }
 
 .timeline-item, .experience-card {
-  background: var(--white);
-  padding: 25px 30px;
-  border-left: 5px solid var(--teal);
-  margin-bottom: 20px;
-  box-shadow: var(--shadow);
-  border-radius: 8px;
-  /* (NEW) Add transitions for hover */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: transparent; /* Changed from var(--white) */
+    padding: 25px 30px;
+    border-left: 5px solid var(--teal);
+    margin-bottom: 20px;
+    box-shadow: none; /* Removed the shadow */
+    border-radius: 8px;
+    transition: transform 0.3s ease; /* Removed box-shadow from transition */
 }
 
 /* (NEW) Consistent hover for all cards */
 .timeline-item:hover, .experience-card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-hover);
+    transform: translateY(-5px);
+    box-shadow: none; /* Removed the shadow from hover */
 }
 
 .experience-card h3 {
@@ -285,13 +284,13 @@ p {
 }
 
 .project-card {
-  background: var(--white);
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: var(--shadow);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: flex;
-  flex-direction: column;
+    background: transparent; /* Changed from var(--white) */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: none; /* Removed the shadow */
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card img {
@@ -305,8 +304,8 @@ p {
 }
 
 .project-card:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-hover);
+    transform: translateY(-8px);
+    box-shadow: none; /* Removed the shadow from hover */
 }
 
 
