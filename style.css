@@ -245,19 +245,19 @@ p {
 }
 
 .timeline-item, .experience-card {
-    background: transparent; /* Changed from var(--white) */
+    background: var(--white); /* <-- Make sure this is 'var(--white)' */
     padding: 25px 30px;
     border-left: 5px solid var(--teal);
     margin-bottom: 20px;
-    box-shadow: none; /* Removed the shadow */
+    box-shadow: var(--shadow); /* <-- Make sure this has 'var(--shadow)' */
     border-radius: 8px;
-    transition: transform 0.3s ease; /* Removed box-shadow from transition */
-}
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+} 
 
 /* (NEW) Consistent hover for all cards */
 .timeline-item:hover, .experience-card:hover {
     transform: translateY(-5px);
-    box-shadow: none; /* Removed the shadow from hover */
+    box-shadow: var(--shadow-hover); /* <-- Restore this */
 }
 
 .experience-card h3 {
@@ -284,11 +284,11 @@ p {
 }
 
 .project-card {
-    background: transparent; /* Changed from var(--white) */
+    background: var(--white); /* <-- Make sure this is 'var(--white)' */
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: none; /* Removed the shadow */
-    transition: transform 0.3s ease;
+    box-shadow: var(--shadow); /* <-- Make sure this has 'var(--shadow)' */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
 }
@@ -305,9 +305,14 @@ p {
 
 .project-card:hover {
     transform: translateY(-8px);
-    box-shadow: none; /* Removed the shadow from hover */
+    box-shadow: var(--shadow-hover); /* <-- Restore this */
 }
-
+/* ======== FIX FOR "BIG WHITE RECTANGLE" ======== */
+/* Add this new rule to your stylesheet */
+.section {
+    background: transparent; /* This makes the section container transparent */
+    box-shadow: none;        /* This removes any shadow from the container */
+}
 
 /* ======== SKILLS SECTION (NEW) ======== */
 .skills-container {
