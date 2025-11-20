@@ -857,3 +857,159 @@ footer {
   color: var(--light-text);
   margin: 0;
 }
+
+/* New/Modified CSS for detailed project showcase */
+
+/* Ensures proper spacing and separation for main project groups */
+.project-group {
+    margin-bottom: 30px; /* Space between main categories like NWSDB Southern, Western, etc. */
+    padding-top: 15px; /* Padding above category heading */
+    border-top: 1px solid #eee; /* Light separator line for main groups */
+}
+
+.project-group:first-of-type {
+    border-top: none; /* No top border for the very first project group */
+    padding-top: 0;
+}
+
+.category-heading {
+    font-size: 1.6em; /* Slightly larger for main category titles */
+    color: #004d99; /* A distinct color for category headings */
+    margin-bottom: 5px;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.category-description {
+    font-size: 0.95em;
+    color: #666;
+    margin-bottom: 20px;
+    margin-left: 5px; /* Align with heading */
+}
+
+.project-item {
+    display: flex;
+    align-items: flex-start; /* Align photo and text at the top */
+    margin-bottom: 15px; /* Space between individual project items */
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+.project-item:hover {
+    transform: translateY(-3px);
+}
+
+.project-item.sub-item {
+    margin-left: 20px; /* Indent sub-items slightly */
+    padding-left: 15px;
+    border-left: 3px solid #e0e0e0; /* A subtle line for sub-items */
+    box-shadow: none; /* Sub-items might not need a heavy shadow */
+}
+
+.project-item .project-photo {
+    width: 120px; /* Keep photos a reasonable size */
+    height: 90px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-right: 20px;
+    flex-shrink: 0; /* Prevent photo from shrinking */
+}
+
+.project-item .project-details {
+    flex-grow: 1;
+}
+
+.project-item h6 { /* For the individual site names within a category */
+    font-size: 1.1em;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.project-item ul.site-specific-bullets {
+    padding-left: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style-type: disc; /* Use discs for bullets */
+}
+
+.project-item ul.site-specific-bullets li {
+    font-size: 0.85em;
+    color: #444;
+    margin-bottom: 4px;
+    line-height: 1.4;
+}
+
+/* Main achievements section styling */
+.main-achievements {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--bg);
+}
+
+.main-achievements h4 {
+  font-size: 1.1rem;
+  color: var(--teal);
+  margin-bottom: 15px;
+  margin-top: 0;
+  font-weight: 600;
+}
+
+.main-achievements ul {
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+
+.main-achievements li {
+  color: var(--light-text);
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+/* Adjustments for the main responsibility list if needed */
+.main-achievements ul.responsibility-list {
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.main-achievements ul.responsibility-list li {
+    font-size: 0.95em;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* Ensure images don't break layout on smaller screens */
+@media (max-width: 768px) {
+    .project-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .project-item .project-photo {
+        width: 100%; /* Full width on small screens */
+        height: 150px; /* A bit taller */
+        margin-right: 0;
+        margin-bottom: 15px; /* Space below photo */
+    }
+
+    .project-item.sub-item {
+        margin-left: 0;
+        border-left: none;
+        padding-left: 10px;
+    }
+
+    .project-item h6 {
+        font-size: 1em;
+    }
+
+    .project-item ul.site-specific-bullets {
+        padding-left: 15px;
+        text-align: left; /* Keep bullets left-aligned */
+    }
+}
