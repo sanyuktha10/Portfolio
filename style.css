@@ -1013,3 +1013,182 @@ footer {
         text-align: left; /* Keep bullets left-aligned */
     }
 }
+
+/* Project Category Pills (Like your image) */
+.project-tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.project-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #e0f2f1; /* Light Teal background */
+    color: #00695c; /* Dark Teal text */
+    border-radius: 50px; /* Makes them pill-shaped */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.project-pill i {
+    margin-right: 8px; /* Space for icon */
+}
+
+.project-pill:hover {
+    background-color: #00695c; /* Dark on hover */
+    color: #ffffff; /* White text on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Icon styles (optional, if you use FontAwesome) */
+.fas {
+    font-size: 0.9em;
+}
+
+/* --- MODAL (POPUP) STYLES --- */
+
+/* The background shade behind the popup */
+.modal-overlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+    backdrop-filter: blur(5px); /* Cool blur effect */
+}
+
+/* The Popup Box itself */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* 5% from top, centered */
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%; /* Width of the popup */
+    max-width: 900px;
+    max-height: 85vh; /* Don't be taller than screen */
+    overflow-y: auto; /* Allow scrolling INSIDE the popup */
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    position: relative;
+    animation: modalFadeIn 0.3s;
+}
+
+/* Header inside the popup */
+.modal-header {
+    background-color: #004d99;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+/* The Close Button (X) */
+.close-btn {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.close-btn:hover {
+    color: #ffeb3b;
+}
+
+/* Body content styling */
+.modal-body {
+    padding: 20px;
+}
+
+/* Animation */
+@keyframes modalFadeIn {
+    from {opacity: 0; transform: translateY(-20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/* Project Item inside Modal (Image + Text) */
+.modal-project-item {
+    display: flex;
+    gap: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+.modal-project-item img {
+    width: 150px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.modal-project-item h5 {
+    margin-top: 0;
+    color: #004d99;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+/* Responsive for mobile */
+@media (max-width: 700px) {
+    .modal-content { width: 95%; margin: 10% auto; }
+    .modal-project-item { flex-direction: column; }
+    .modal-project-item img { width: 100%; height: 180px; }
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    z-index: 9999;
+}
+
+.modal-content {
+    background: white;
+    width: 90%;
+    max-width: 700px;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close-btn {
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
