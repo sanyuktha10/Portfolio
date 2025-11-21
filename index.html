@@ -130,8 +130,7 @@
       <div class="experience-grid">
 
 
-<!-- HAYLEYS SOLAR CARD (EXPANDABLE VERSION WITH FULL CENTRAL LIST) -->
-        <div class="experience-card full-width" data-aos="fade-up">
+<div class="experience-card full-width" data-aos="fade-up">
           <div class="card-header">
             <img src="images/logo-hayleys.png" alt="Hayleys Solar Logo" class="company-logo-small">
             <div class="card-header-text">
@@ -143,309 +142,255 @@
           <div class="main-achievements">
             <h4>Key Responsibilities</h4>
             <ul class="responsibility-list">
-              <li>Managed and commissioned over 1.8 MW of commercial and utility-scale rooftop solar PV projects.</li>
-              <li>Designed grid-tied PV systems including module string sizing, inverter configuration, and protection coordination.</li>
-              <li>Coordinated end-to-end execution: material planning, contractor supervision, and CEB/LECO grid interconnection.</li>
-            </ul>
+               <li>Successfully contributed to <strong>30+ commercial and government PV projects</strong> across Sri Lanka.</li>
+        <li>Specialized in <strong>technical design, field engineering, protection systems, and commissioning</strong>.</li>
+        <li>Led complex sites involving <strong>NWSDB pump stations, commercial rooftops, and multi-site rollouts</strong>.</li>
+        <li>Collaborated closely with <strong>CEB, NWSDB engineers, contractors, and safety teams</strong>.</li>
+        <li>Delivered projects with strong focus on <strong>safety, compliance, and long-term performance</strong>.</li>
+    </ul>
 
-            <!-- 1. THE BUTTONS -->
             <h4 style="margin-top: 25px; border-top: 1px solid #eee; padding-top: 15px;">Project Portfolio (Click to Expand)</h4>
             <div class="project-tags-container" style="margin-bottom: 20px;">
+                <button class="project-pill" onclick="toggleProject('expand-commercial')"><i class="fas fa-building"></i> Commercial Rooftops</button>
+                <button class="project-pill" onclick="toggleProject('expand-western')"><i class="fas fa-tint"></i> NWSDB Western</button>
+                <button class="project-pill" onclick="toggleProject('expand-central')"><i class="fas fa-mountain"></i> NWSDB Central</button>
+                <button class="project-pill" onclick="toggleProject('expand-southern')"><i class="fas fa-water"></i> NWSDB Southern</button>
+            </div>
+
+            <div id="expand-commercial" class="expandable-content" style="display: none; background: #f9f9f9; padding: 25px; border-radius: 12px; border-left: 5px solid #004d99;">
+                <h5 style="color: #004d99; margin-bottom: 15px; font-size: 1.3em;">Commercial & Industrial Rooftops</h5>
                 
-                <button class="project-pill" onclick="toggleProject('expand-commercial')">
-                    <i class="fas fa-building"></i> Commercial Rooftops
-                </button>
-
-                <button class="project-pill" onclick="toggleProject('expand-western')">
-                    <i class="fas fa-tint"></i> NWSDB Western
-                </button>
-
-                <button class="project-pill" onclick="toggleProject('expand-central')">
-                    <i class="fas fa-mountain"></i> NWSDB Central
-                </button>
-
-                <button class="project-pill" onclick="toggleProject('expand-southern')">
-                    <i class="fas fa-water"></i> NWSDB Southern
-                </button>
-
-            </div>
-
-            <!-- 2. THE EXPANDABLE CONTENT AREAS -->
-
-            <!-- SECTION: COMMERCIAL -->
-            <div id="expand-commercial" class="expandable-content" style="display: none; background: #f9f9f9; padding: 15px; border-radius: 8px; border-left: 4px solid #004d99;">
-                <h5 style="color: #004d99; margin-bottom: 15px;">Commercial & Industrial Rooftops</h5>
-                
-                <div class="project-item" style="margin-bottom: 15px; display: flex; gap: 15px;">
-                    <img src="images/placeholder-sathosa.jpg" alt="Sathosa" style="width: 100px; height: 75px; object-fit: cover; border-radius: 5px;">
-                    <div>
-                        <h6 style="margin: 0; font-weight: 600;">Sathosa Motors PLC</h6>
-                        <ul class="site-specific-bullets" style="font-size: 0.9em; padding-left: 20px; margin: 5px 0;">
-                            <li>Conducted complete site inspection and load evaluation.</li>
-                            <li>Designed commercial rooftop PV layout ensuring maximum usable area.</li>
-                            <li>Assisted in commissioning and final CEB documentation.</li>
-                        </ul>
-                    </div>
+                <div style="margin-bottom: 25px; color: #555; font-size: 1em; background: white; padding: 15px; border-radius: 8px;">
+                    <strong>Common Scope of Work:</strong>
+                    <ul style="margin-top: 8px; padding-left: 20px; line-height: 1.6;">
+                        <li>Designed and optimized rooftop PV systems with structural and shading constraints.</li>
+        <li>Prepared detailed electrical layouts including string sizing, conduits, and protections.</li>
+        <li>Coordinated with contractors for measurements, safety, and installation workflows.</li>
+        <li>Ensured CEB compliance with proper grounding, SPD selection, and inverter settings.</li>
+        <li>Improved performance using load analysis, string balancing, and MPPT matching.</li>
+        <li>Supported system commissioning, testing, and documentation.</li>
+      </ul>
                 </div>
 
-                <div class="project-item" style="margin-bottom: 15px; display: flex; gap: 15px;">
-                    <img src="images/placeholder-esoft.jpg" alt="ESOFT" style="width: 100px; height: 75px; object-fit: cover; border-radius: 5px;">
-                    <div>
-                        <h6 style="margin: 0; font-weight: 600;">ESOFT Metro Campus</h6>
-                        <ul class="site-specific-bullets" style="font-size: 0.9em; padding-left: 20px; margin: 5px 0;">
-                            <li>Designed rooftop system considering structural limitations.</li>
-                            <li>Managed installation phases (mounting, DC wiring, inverters).</li>
-                        </ul>
+                <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+                    
+                    <div style="flex: 1 1 45%; background: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); overflow: hidden;">
+                        <img src="images/placeholder-sathosa.jpg" alt="Sathosa" style="width: 100%; height: 250px; object-fit: cover;">
+                        <div style="padding: 15px; text-align: center;">
+                            <h6 style="margin: 0; color: #333; font-weight: 600; font-size: 1.1em;">Sathosa Motors PLC</h6>
+                        </div>
                     </div>
+
+                    <div style="flex: 1 1 45%; background: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); overflow: hidden;">
+                        <img src="images/placeholder-esoft.jpg" alt="ESOFT" style="width: 100%; height: 250px; object-fit: cover;">
+                        <div style="padding: 15px; text-align: center;">
+                            <h6 style="margin: 0; color: #333; font-weight: 600; font-size: 1.1em;">ESOFT Metro Campus</h6>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
-            <!-- SECTION: WESTERN -->
-            <div id="expand-western" class="expandable-content" style="display: none; background: #f9f9f9; padding: 15px; border-radius: 8px; border-left: 4px solid #004d99;">
-                <h5 style="color: #004d99; margin-bottom: 15px;">NWSDB – Western Province</h5>
-                
-                <div class="project-item" style="margin-bottom: 15px; display: flex; gap: 15px;">
-                    <img src="images/placeholder-veyangoda.jpg" alt="Veyangoda" style="width: 100px; height: 75px; object-fit: cover; border-radius: 5px;">
-                    <div>
-                        <h6 style="margin: 0; font-weight: 600;">Veyangoda WTP (40 kW)</h6>
-                        <ul style="font-size: 0.9em; padding-left: 20px; margin: 5px 0;"><li>Designed module strings and inverter matching.</li><li>Coordinated AC/DC protection testing.</li></ul>
-                    </div>
+            <div id="expand-western" class="expandable-content" style="display: none; background: #f9f9f9; padding: 25px; border-radius: 12px; border-left: 5px solid #004d99;">
+                <h5 style="color: #004d99; margin-bottom: 15px; font-size: 1.3em;">NWSDB – Western Province</h5>
+
+                <div style="margin-bottom: 25px; color: #555; font-size: 1em; background: white; padding: 15px; border-radius: 8px;">
+                    <strong>Common Scope of Work:</strong>
+                    <ul style="margin-top: 8px; padding-left: 20px; line-height: 1.6;">
+                        <li>Integrated solar PV systems for continuous pump stations with strict NWSDB standards.</li>
+        <li>Designed layouts, inverter selections, and AC/DC protection systems suitable for motor loads.</li>
+        <li>Ensured waterproof routing, proper earthing, and MCC panel integration.</li>
+        <li>Worked with NWSDB engineers for inspections, testing, and approvals.</li>
+        <li>Managed contractor teams to maintain quality within tight schedules.</li>
+        <li>Handled commissioning, safety verification, and site handover.</li>
+    </ul>
                 </div>
 
-                <div class="project-item" style="margin-bottom: 15px; display: flex; gap: 15px;">
-                    <img src="images/placeholder-kadawatha.jpg" alt="Kadawatha" style="width: 100px; height: 75px; object-fit: cover; border-radius: 5px;">
-                    <div>
-                        <h6 style="margin: 0; font-weight: 600;">Kadawatha RSC (20 kW)</h6>
-                        <ul style="font-size: 0.9em; padding-left: 20px; margin: 5px 0;"><li>Performed site feasibility and BOS calculation.</li><li>Installed string inverters with proper isolations.</li></ul>
+                <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+                    
+                    <div style="flex: 1 1 45%; background: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); overflow: hidden;">
+                        <img src="images/placeholder-veyangoda.jpg" alt="Veyangoda" style="width: 100%; height: 250px; object-fit: cover;">
+                        <div style="padding: 15px; text-align: center;">
+                            <h6 style="margin: 0; font-weight: 600; font-size: 1.1em;">Veyangoda WTP (40 kW)</h6>
+                        </div>
                     </div>
-                </div>
 
-                <div class="project-item" style="margin-bottom: 15px; display: flex; gap: 15px;">
-                    <img src="images/placeholder-ekala.jpg" alt="Ekala" style="width: 100px; height: 75px; object-fit: cover; border-radius: 5px;">
-                    <div>
-                        <h6 style="margin: 0; font-weight: 600;">Ekala Pump House (35 kW)</h6>
-                        <ul style="font-size: 0.9em; padding-left: 20px; margin: 5px 0;"><li>Managed installation in industrial pump environment.</li><li>Ensured waterproof routing.</li></ul>
+                    <div style="flex: 1 1 45%; background: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); overflow: hidden;">
+                        <img src="images/placeholder-kadawatha.jpg" alt="Kadawatha" style="width: 100%; height: 250px; object-fit: cover;">
+                        <div style="padding: 15px; text-align: center;">
+                            <h6 style="margin: 0; font-weight: 600; font-size: 1.1em;">Kadawatha RSC (20 kW)</h6>
+                        </div>
                     </div>
-                </div>
 
-                <div class="project-item" style="margin-bottom: 15px; display: flex; gap: 15px;">
-                    <img src="images/placeholder-jaela.jpg" alt="Ja-Ela" style="width: 100px; height: 75px; object-fit: cover; border-radius: 5px;">
-                    <div>
-                        <h6 style="margin: 0; font-weight: 600;">Ja-Ela Area Engineer's Office (80 kW)</h6>
-                        <ul style="font-size: 0.9em; padding-left: 20px; margin: 5px 0;"><li>Led team for full system construction.</li><li>Oversaw MCC integration.</li></ul>
+                    <div style="flex: 1 1 45%; background: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); overflow: hidden;">
+                        <img src="images/placeholder-ekala.jpg" alt="Ekala" style="width: 100%; height: 250px; object-fit: cover;">
+                        <div style="padding: 15px; text-align: center;">
+                            <h6 style="margin: 0; font-weight: 600; font-size: 1.1em;">Ekala Pump House (35 kW)</h6>
+                        </div>
                     </div>
-                </div>
-            </div>
 
-            <!-- SECTION: CENTRAL (FULL LIST) -->
-            <div id="expand-central" class="expandable-content" style="display: none; background: #f9f9f9; padding: 15px; border-radius: 8px; border-left: 4px solid #004d99;">
-                <h5 style="color: #004d99; margin-bottom: 15px;">NWSDB – Central Province</h5>
-
-                <!-- Hatton -->
-                <div class="project-item" style="margin-bottom: 15px; display: flex; gap: 15px;">
-                    <img src="images/placeholder-hatton.jpg" alt="Hatton" style="width: 100px; height: 75px; object-fit: cover; border-radius: 5px;">
-                    <div>
-                        <h6 style="margin: 0; font-weight: 600;">Hatton WTP (40 kW)</h6>
-                        <ul style="font-size: 0.9em; padding-left: 20px; margin: 5px 0;">
-                            <li>Designed layout for mountainous shading.</li>
-                            <li>Verified structural anchoring.</li>
-                        </ul>
+                    <div style="flex: 1 1 45%; background: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); overflow: hidden;">
+                        <img src="images/placeholder-jaela.jpg" alt="Ja-Ela" style="width: 100%; height: 250px; object-fit: cover;">
+                        <div style="padding: 15px; text-align: center;">
+                            <h6 style="margin: 0; font-weight: 600; font-size: 1.1em;">Ja-Ela Area Office (80 kW)</h6>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Nawalapitiya -->
-                <div class="project-item" style="margin-bottom: 15px; display: flex; gap: 15px;">
-                    <img src="images/placeholder-nawalapitiya.jpg" alt="Nawalapitiya Pump House" style="width: 100px; height: 75px; object-fit: cover; border-radius: 5px;">
-                    <div>
-                        <h6 style="margin: 0; font-weight: 600;">Nawalapitiya High-Lift Pump House (60 kW)</h6>
-                        <ul style="font-size: 0.9em; padding-left: 20px; margin: 5px 0;">
-                            <li>Matched PV output with pump operating cycles.</li>
-                            <li>Supervised installation of inverter rooms and cable paths.</li>
-                            <li>Completed PR testing and operator training.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Udathanna -->
-                <div class="project-item" style="margin-bottom: 15px; display: flex; gap: 15px;">
-                    <img src="images/placeholder-udathanna.jpg" alt="Udathanna" style="width: 100px; height: 75px; object-fit: cover; border-radius: 5px;">
-                    <div>
-                        <h6 style="margin: 0; font-weight: 600;">Udathanna Water Treatment Plant (90 kW)</h6>
-                        <ul style="font-size: 0.9em; padding-left: 20px; margin: 5px 0;">
-                            <li>Large-scale installation: coordinated multiple subcontractor teams.</li>
-                            <li>Executed AC/DC protection and synchronization checks.</li>
-                            <li>Handled final CEB approval process.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Inamaluwa -->
-                <div class="project-item" style="margin-bottom: 15px; display: flex; gap: 15px;">
-                    <img src="images/placeholder-inamaluwa.jpg" alt="Inamaluwa" style="width: 100px; height: 75px; object-fit: cover; border-radius: 5px;">
-                    <div>
-                        <h6 style="margin: 0; font-weight: 600;">Inamaluwa Booster Pump House (90 kW)</h6>
-                        <ul style="font-size: 0.9em; padding-left: 20px; margin: 5px 0;">
-                            <li>Designed three inverter banks for balanced loads.</li>
-                            <li>Implemented earthing pits and lightning protection.</li>
-                            <li>Monitored trial run and system stability.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Dambulla -->
-                <div class="project-item" style="margin-bottom: 15px; display: flex; gap: 15px;">
-                    <img src="images/placeholder-dambulla.jpg" alt="Dambulla" style="width: 100px; height: 75px; object-fit: cover; border-radius: 5px;">
-                    <div>
-                        <h6 style="margin: 0; font-weight: 600;">Intake of Greater Dambulla WTP (45 kW)</h6>
-                        <ul style="font-size: 0.9em; padding-left: 20px; margin: 5px 0;">
-                            <li>Managed installation near high-moisture environment.</li>
-                            <li>Ensured waterproof cable management and robust isolations.</li>
-                            <li>Completed commissioning.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Gonigoda -->
-                <div class="project-item" style="margin-bottom: 15px; display: flex; gap: 15px;">
-                    <img src="images/placeholder-gonigoda.jpg" alt="Gonigoda" style="width: 100px; height: 75px; object-fit: cover; border-radius: 5px;">
-                    <div>
-                        <h6 style="margin: 0; font-weight: 600;">Gonigoda Booster Pump House (30 kW)</h6>
-                        <ul style="font-size: 0.9em; padding-left: 20px; margin: 5px 0;">
-                            <li>Surveyed site and prepared load profile.</li>
-                            <li>Installed PV system with minimal downtime for pumps.</li>
-                            <li>Verified all protection layers before CEB inspection.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Gohagoda -->
-                <div class="project-item" style="margin-bottom: 15px; display: flex; gap: 15px;">
-                    <img src="images/placeholder-gohagoda.jpg" alt="Gohagoda" style="width: 100px; height: 75px; object-fit: cover; border-radius: 5px;">
-                    <div>
-                        <h6 style="margin: 0; font-weight: 600;">Gohagoda Intake (35 kW)</h6>
-                        <ul style="font-size: 0.9em; padding-left: 20px; margin: 5px 0;">
-                            <li>Handled panel mounting in limited available space.</li>
-                            <li>Coordinated AC side connection with existing system.</li>
-                            <li>Completed testing and documentation.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Kehelwala -->
-                <div class="project-item" style="margin-bottom: 15px; display: flex; gap: 15px;">
-                    <img src="images/placeholder-kehelwala.jpg" alt="Kehelwala" style="width: 100px; height: 75px; object-fit: cover; border-radius: 5px;">
-                    <div>
-                        <h6 style="margin: 0; font-weight: 600;">Kehelwala Water Treatment Plant (40 kW)</h6>
-                        <ul style="font-size: 0.9em; padding-left: 20px; margin: 5px 0;">
-                            <li>Designed inverter configuration and string matching.</li>
-                            <li>Ensured proper SPD installation and AC protections.</li>
-                            <li>Completed commissioning.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Marassana -->
-                <div class="project-item" style="margin-bottom: 15px; display: flex; gap: 15px;">
-                    <img src="images/placeholder-marassana.jpg" alt="Marassana" style="width: 100px; height: 75px; object-fit: cover; border-radius: 5px;">
-                    <div>
-                        <h6 style="margin: 0; font-weight: 600;">Marassana Water Treatment Plant (40 kW)</h6>
-                        <ul style="font-size: 0.9em; padding-left: 20px; margin: 5px 0;">
-                            <li>Structured PV layout on uneven roof area.</li>
-                            <li>Verified earthing and system bonding.</li>
-                            <li>Delivered as-built drawings.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Kandakaduwa -->
-                <div class="project-item" style="margin-bottom: 15px; display: flex; gap: 15px;">
-                    <img src="images/placeholder-kandakaduwa.jpg" alt="Kandakaduwa" style="width: 100px; height: 75px; object-fit: cover; border-radius: 5px;">
-                    <div>
-                        <h6 style="margin: 0; font-weight: 600;">Kandakaduwa Booster Pump House (25 kW)</h6>
-                        <ul style="font-size: 0.9em; padding-left: 20px; margin: 5px 0;">
-                            <li>Conducted feasibility and structural analysis.</li>
-                            <li>Managed installation with minimal structural load.</li>
-                            <li>Completed CEB approval.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Yatiwawala -->
-                <div class="project-item" style="margin-bottom: 15px; display: flex; gap: 15px;">
-                    <img src="images/placeholder-yatiwawala.jpg" alt="Yatiwawala" style="width: 100px; height: 75px; object-fit: cover; border-radius: 5px;">
-                    <div>
-                        <h6 style="margin: 0; font-weight: 600;">Yatiwawala Booster Pump House (45 kW)</h6>
-                        <ul style="font-size: 0.9em; padding-left: 20px; margin: 5px 0;">
-                            <li>Verified pump operating cycles and optimized PV design.</li>
-                            <li>Standardized wiring paths and protections.</li>
-                            <li>Commissioned with full test report.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Paradeka -->
-                <div class="project-item" style="margin-bottom: 15px; display: flex; gap: 15px;">
-                    <img src="images/placeholder-paradeka.jpg" alt="Paradeka" style="width: 100px; height: 75px; object-fit: cover; border-radius: 5px;">
-                    <div>
-                        <h6 style="margin: 0; font-weight: 600;">Paradeka Water Treatment Plant (50 kW)</h6>
-                        <ul style="font-size: 0.9em; padding-left: 20px; margin: 5px 0;">
-                            <li>Completed solar design and inverter selection.</li>
-                            <li>Supervised installation and safety compliance.</li>
-                            <li>Conducted PR analysis after commissioning.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Madarangoda -->
-                <div class="project-item" style="margin-bottom: 15px; display: flex; gap: 15px;">
-                    <img src="images/placeholder-madarangoda.jpg" alt="Madarangoda" style="width: 100px; height: 75px; object-fit: cover; border-radius: 5px;">
-                    <div>
-                        <h6 style="margin: 0; font-weight: 600;">Madarangoda Booster Pump House (25 kW)</h6>
-                        <ul style="font-size: 0.9em; padding-left: 20px; margin: 5px 0;">
-                            <li>Designed compact system for limited roof area.</li>
-                            <li>Managed installation quality control.</li>
-                            <li>Finalized test reports.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Polgolla -->
-                <div class="project-item" style="margin-bottom: 15px; display: flex; gap: 15px;">
-                    <img src="images/placeholder-polgolla.jpg" alt="Polgolla" style="width: 100px; height: 75px; object-fit: cover; border-radius: 5px;">
-                    <div>
-                        <h6 style="margin: 0; font-weight: 600;">Polgolla Water Treatment Plant (40 kW)</h6>
-                        <ul style="font-size: 0.9em; padding-left: 20px; margin: 5px 0;">
-                            <li>Conducted site inspection and shading analysis.</li>
-                            <li>Designed system according to NWSDB standards.</li>
-                            <li>Completed commissioning and training.</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- SECTION: SOUTHERN -->
-            <div id="expand-southern" class="expandable-content" style="display: none; background: #f9f9f9; padding: 15px; border-radius: 8px; border-left: 4px solid #004d99;">
-                <h5 style="color: #004d99; margin-bottom: 15px;">NWSDB – Southern Province</h5>
-                
-                <div class="project-item" style="margin-bottom: 15px; display: flex; gap: 15px;">
-                    <img src="images/placeholder-kirama.jpg" alt="Kirama" style="width: 100px; height: 75px; object-fit: cover; border-radius: 5px;">
-                    <div>
-                        <h6 style="margin: 0; font-weight: 600;">Kirama WTP (80 kW)</h6>
-                        <ul style="font-size: 0.9em; padding-left: 20px; margin: 5px 0;"><li>Designed multi-string high-capacity system.</li><li>Ensured compliance with pump loads.</li></ul>
-                    </div>
-                </div>
-
-                <div class="project-item" style="margin-bottom: 15px; display: flex; gap: 15px;">
-                    <img src="images/placeholder-hallala.jpg" alt="Hallala" style="width: 100px; height: 75px; object-fit: cover; border-radius: 5px;">
-                    <div>
-                        <h6 style="margin: 0; font-weight: 600;">Hallala WTP (60 kW)</h6>
-                        <ul style="font-size: 0.9em; padding-left: 20px; margin: 5px 0;"><li>Oversaw project execution end-to-end.</li><li>Implemented robust coastal earthing.</li></ul>
-                    </div>
                 </div>
             </div>
 
-            <!-- 3. THE SCRIPT -->
+            <div id="expand-central" class="expandable-content" style="display: none; background: #f9f9f9; padding: 25px; border-radius: 12px; border-left: 5px solid #004d99;">
+                <h5 style="color: #004d99; margin-bottom: 15px; font-size: 1.3em;">NWSDB – Central Province (14 Sites)</h5>
+
+                <div style="margin-bottom: 25px; color: #555; font-size: 1em; background: white; padding: 15px; border-radius: 8px;">
+                    <strong>Common Scope of Work:</strong>
+                    <ul style="margin-top: 8px; padding-left: 20px; line-height: 1.6;">
+                        <li>Executed 14 remote PV projects across hilly regions with difficult logistics.</li>
+        <li>Planned material transport, safety management, and installation on irregular roofs.</li>
+        <li>Designed systems to overcome shading from hills, trees, and orientation challenges.</li>
+        <li>Led on-site supervision, safety checks, and contractor coordination.</li>
+        <li>Managed multiple sites simultaneously, maintaining timelines and quality.</li>
+        <li>Completed all testing, commissioning, and technical documentation.</li>
+    </ul>
+                </div>
+
+                <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+                    
+                    <div style="flex: 1 1 45%; background: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); overflow: hidden;">
+                        <img src="images/placeholder-hatton.jpg" alt="Hatton" style="width: 100%; height: 250px; object-fit: cover;">
+                        <div style="padding: 15px; text-align: center;">
+                            <h6 style="margin: 0; font-size: 1.1em; font-weight: 600;">Hatton WTP (40 kW)</h6>
+                        </div>
+                    </div>
+
+                    <div style="flex: 1 1 45%; background: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); overflow: hidden;">
+                        <img src="images/placeholder-nawalapitiya.jpg" alt="Nawalapitiya" style="width: 100%; height: 250px; object-fit: cover;">
+                        <div style="padding: 15px; text-align: center;">
+                            <h6 style="margin: 0; font-size: 1.1em; font-weight: 600;">Nawalapitiya (60 kW)</h6>
+                        </div>
+                    </div>
+
+                    <div style="flex: 1 1 45%; background: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); overflow: hidden;">
+                        <img src="images/placeholder-udathanna.jpg" alt="Udathanna" style="width: 100%; height: 250px; object-fit: cover;">
+                        <div style="padding: 15px; text-align: center;">
+                            <h6 style="margin: 0; font-size: 1.1em; font-weight: 600;">Udathanna WTP (90 kW)</h6>
+                        </div>
+                    </div>
+
+                    <div style="flex: 1 1 45%; background: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); overflow: hidden;">
+                        <img src="images/placeholder-inamaluwa.jpg" alt="Inamaluwa" style="width: 100%; height: 250px; object-fit: cover;">
+                        <div style="padding: 15px; text-align: center;">
+                            <h6 style="margin: 0; font-size: 1.1em; font-weight: 600;">Inamaluwa (90 kW)</h6>
+                        </div>
+                    </div>
+
+                    <div style="flex: 1 1 45%; background: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); overflow: hidden;">
+                        <img src="images/placeholder-dambulla.jpg" alt="Dambulla" style="width: 100%; height: 250px; object-fit: cover;">
+                        <div style="padding: 15px; text-align: center;">
+                            <h6 style="margin: 0; font-size: 1.1em; font-weight: 600;">Dambulla Intake (45 kW)</h6>
+                        </div>
+                    </div>
+
+                    <div style="flex: 1 1 45%; background: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); overflow: hidden;">
+                        <img src="images/placeholder-gonigoda.jpg" alt="Gonigoda" style="width: 100%; height: 250px; object-fit: cover;">
+                        <div style="padding: 15px; text-align: center;">
+                            <h6 style="margin: 0; font-size: 1.1em; font-weight: 600;">Gonigoda (30 kW)</h6>
+                        </div>
+                    </div>
+                    
+                    <div style="flex: 1 1 45%; background: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); overflow: hidden;">
+                        <img src="images/placeholder-gohagoda.jpg" alt="Gohagoda" style="width: 100%; height: 250px; object-fit: cover;">
+                        <div style="padding: 15px; text-align: center;">
+                            <h6 style="margin: 0; font-size: 1.1em; font-weight: 600;">Gohagoda (35 kW)</h6>
+                        </div>
+                    </div>
+
+                    <div style="flex: 1 1 45%; background: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); overflow: hidden;">
+                        <img src="images/placeholder-kehelwala.jpg" alt="Kehelwala" style="width: 100%; height: 250px; object-fit: cover;">
+                        <div style="padding: 15px; text-align: center;">
+                            <h6 style="margin: 0; font-size: 1.1em; font-weight: 600;">Kehelwala WTP (40 kW)</h6>
+                        </div>
+                    </div>
+
+                    <div style="flex: 1 1 45%; background: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); overflow: hidden;">
+                        <img src="images/placeholder-marassana.jpg" alt="Marassana" style="width: 100%; height: 250px; object-fit: cover;">
+                        <div style="padding: 15px; text-align: center;">
+                            <h6 style="margin: 0; font-size: 1.1em; font-weight: 600;">Marassana WTP (40 kW)</h6>
+                        </div>
+                    </div>
+
+                    <div style="flex: 1 1 45%; background: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); overflow: hidden;">
+                        <img src="images/placeholder-kandakaduwa.jpg" alt="Kandakaduwa" style="width: 100%; height: 250px; object-fit: cover;">
+                        <div style="padding: 15px; text-align: center;">
+                            <h6 style="margin: 0; font-size: 1.1em; font-weight: 600;">Kandakaduwa (25 kW)</h6>
+                        </div>
+                    </div>
+
+                    <div style="flex: 1 1 45%; background: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); overflow: hidden;">
+                        <img src="images/placeholder-yatiwawala.jpg" alt="Yatiwawala" style="width: 100%; height: 250px; object-fit: cover;">
+                        <div style="padding: 15px; text-align: center;">
+                            <h6 style="margin: 0; font-size: 1.1em; font-weight: 600;">Yatiwawala (45 kW)</h6>
+                        </div>
+                    </div>
+
+                    <div style="flex: 1 1 45%; background: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); overflow: hidden;">
+                        <img src="images/placeholder-paradeka.jpg" alt="Paradeka" style="width: 100%; height: 250px; object-fit: cover;">
+                        <div style="padding: 15px; text-align: center;">
+                            <h6 style="margin: 0; font-size: 1.1em; font-weight: 600;">Paradeka WTP (50 kW)</h6>
+                        </div>
+                    </div>
+
+                    <div style="flex: 1 1 45%; background: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); overflow: hidden;">
+                        <img src="images/placeholder-madarangoda.jpg" alt="Madarangoda" style="width: 100%; height: 250px; object-fit: cover;">
+                        <div style="padding: 15px; text-align: center;">
+                            <h6 style="margin: 0; font-size: 1.1em; font-weight: 600;">Madarangoda (25 kW)</h6>
+                        </div>
+                    </div>
+
+                    <div style="flex: 1 1 45%; background: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); overflow: hidden;">
+                        <img src="images/placeholder-polgolla.jpg" alt="Polgolla" style="width: 100%; height: 250px; object-fit: cover;">
+                        <div style="padding: 15px; text-align: center;">
+                            <h6 style="margin: 0; font-size: 1.1em; font-weight: 600;">Polgolla WTP (40 kW)</h6>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="expand-southern" class="expandable-content" style="display: none; background: #f9f9f9; padding: 25px; border-radius: 12px; border-left: 5px solid #004d99;">
+                <h5 style="color: #004d99; margin-bottom: 15px; font-size: 1.3em;">NWSDB – Southern Province</h5>
+
+                <div style="margin-bottom: 25px; color: #555; font-size: 1em; background: white; padding: 15px; border-radius: 8px;">
+                    <strong>Common Scope of Work:</strong>
+                    <ul style="margin-top: 8px; padding-left: 20px; line-height: 1.6;">
+                        <li>Engineered PV systems designed to withstand humidity, salinity, and coastal corrosion.</li>
+        <li>Selected durable materials, protections, and mounting structures for long-term reliability.</li>
+        <li>Implemented proper grounding, SPD placement, and AC/DC safety measures.</li>
+        <li>Coordinated with CEB for system inspections, testing, and energization.</li>
+        <li>Ensured system stability under pump load fluctuations and harsh environmental conditions.</li>
+        <li>Completed full documentation, testing, and final handover.</li>
+    </ul>
+                </div>
+
+                <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+                    
+                    <div style="flex: 1 1 45%; background: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); overflow: hidden;">
+                        <img src="images/placeholder-kirama.jpg" alt="Kirama" style="width: 100%; height: 250px; object-fit: cover;">
+                        <div style="padding: 15px; text-align: center;">
+                            <h6 style="margin: 0; font-weight: 600; font-size: 1.1em;">Kirama WTP (80 kW)</h6>
+                        </div>
+                    </div>
+
+                    <div style="flex: 1 1 45%; background: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); overflow: hidden;">
+                        <img src="images/placeholder-hallala.jpg" alt="Hallala" style="width: 100%; height: 250px; object-fit: cover;">
+                        <div style="padding: 15px; text-align: center;">
+                            <h6 style="margin: 0; font-weight: 600; font-size: 1.1em;">Hallala WTP (60 kW)</h6>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
             <script>
                 function toggleProject(id) {
                     var selectedSection = document.getElementById(id);
