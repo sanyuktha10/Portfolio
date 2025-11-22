@@ -32,6 +32,9 @@ body {
   padding: 0;
   line-height: 1.7;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 *, *::before, *::after {
@@ -501,7 +504,7 @@ footer {
   color: #ccc;
   padding: 50px 10%;
   font-size: 0.95rem;
-  margin-top: 80px;
+  margin-top: auto;
   margin-bottom: 0;
   border-top: 3px solid var(--orange);
   width: 100vw;
@@ -510,6 +513,7 @@ footer {
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
+  flex-shrink: 0;
 }
 
 .footer-content {
@@ -1191,4 +1195,16 @@ footer {
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
+}
+/* 1. Make the body at least as tall as the screen */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 100% of the viewport height */
+    margin: 0;
+}
+
+/* 2. This tells the footer to push itself to the bottom */
+footer {
+    margin-top: auto; 
 }
