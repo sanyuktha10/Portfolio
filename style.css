@@ -581,81 +581,12 @@ p {
 footer {
   background: linear-gradient(135deg, var(--text) 0%, var(--dark-blue) 100%);
   color: #ccc;
-  padding: 50px 10%;
-  font-size: 0.95rem;
-  margin-top: auto;
-  border-top: 3px solid var(--orange);
-  width: 100%;
-  box-sizing: border-box;
-  flex-shrink: 0;
-}
-
-.footer-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 40px;
-  text-align: left;
-  padding: 0 10%;
-  box-sizing: border-box;
-  width: 100%;
-}
-
-.footer-section h4 {
-  color: var(--orange);
-  font-size: 1.1rem;
-  margin-bottom: 15px;
-  font-weight: 600;
-}
-
-.footer-section p,
-.footer-section a {
-  color: #bbb;
-  line-height: 1.8;
-  margin-bottom: 8px;
-}
-
-.footer-section a {
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.footer-section a:hover {
-  color: var(--orange);
-  text-decoration: underline;
-}
-
-.footer-bottom {
+  
   text-align: center;
-  margin-top: 0px;
-  padding-top: 0px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  color: #999;
+  padding: 3rem 0rem;
+  margin-top: 0rem;
 }
 
-.footer-bottom p {
-  margin: 0;
-  font-size: 0.9rem;
-}
-
-.footer-socials {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  margin-top: 15px;
-}
-
-.footer-socials a {
-  color: var(--orange);
-  font-size: 1.5rem;
-  transition: all 0.3s ease;
-}
-
-.footer-socials a:hover {
-  color: var(--white);
-  transform: scale(1.2);
-}
 
 
 /* ======== RESPONSIVE (MEDIA QUERIES) ======== */
@@ -794,14 +725,7 @@ footer {
     padding: 0 5%;
   }
 
-  footer {
-    padding: 40px 5%;
-  }
-
-  .footer-content {
-    padding: 0 5%;
-  }
-
+  
   .project-card img {
     height: 150px;
   }
@@ -942,13 +866,10 @@ footer {
     margin-bottom: 12px;
   }
 
-  footer {
-    padding: 40px 4%;
-  }
-
-  .footer-content {
-    padding: 0 4%;
-  }
+    section {
+        padding: 4rem 0;
+    }
+ 
 }
 
 /* ======== WORK EXPERIENCE CARD STYLES (LOGO LEFT, TEXT STACKED) ======== */
@@ -1337,7 +1258,3 @@ body {
     margin: 0;
 }
 
-/* 2. This tells the footer to push itself to the bottom */
-footer {
-    margin-top: auto; 
-}
