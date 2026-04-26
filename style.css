@@ -346,20 +346,15 @@ p {
   padding: 0 10%;
   box-sizing: border-box;
   width: 100%;
-}
-
-.experience-grid {
   display: grid;
-  gap: 20px;
-  width: 100%;
-  box-sizing: border-box;
+  gap: 0px;
 }
 
 .timeline-item, .experience-card {
     background: var(--white);
-    padding: 25px 30px;
-    border-left: 5px solid var(--teal);
-    margin-bottom: 20px;
+    padding: 25px 30px; /* Ensure consistent padding */
+    border-left: 5px solid var(--teal); /* Ensure consistent green line */
+    margin-bottom: 20px; /* Ensure consistent spacing between boxes */
     box-shadow: var(--shadow);
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -379,7 +374,7 @@ p {
 }
 
 .experience-card ul {
-  padding-left: 20px;
+  padding-left: 0px;
   margin-bottom: 0;
 }
 
@@ -540,9 +535,9 @@ p {
 }
 
 .contact-details {
-  margin: 30px auto;
+  margin: 0px auto;
   font-size: 1.1rem;
-  max-width: 1200px;
+  max-width: 1500px;
   padding: 0 10%;
   box-sizing: border-box;
   width: 100%;
@@ -584,10 +579,12 @@ footer {
   
   text-align: center;
   padding: 3rem 0rem;
-  margin-top: 0rem;
+  margin: 0; /* Remove all margins */
+  position: fixed; /* Fix footer to the bottom */
+  bottom: 0; /* Align footer to the bottom */
+  left: 0; /* Ensure footer touches the left side */
+  width: 100%; /* Make footer span full width */
 }
-
-
 
 /* ======== RESPONSIVE (MEDIA QUERIES) ======== */
 @media (max-width: 768px) {
@@ -735,12 +732,13 @@ footer {
   }
 
   .skills-grid span {
-    padding: 8px 14px;
-    font-size: 0.85rem;
+    padding: 6px 12px;
+    font-size: 0.8rem;
   }
 
   .timeline-item, .experience-card {
-    padding: 18px 20px;
+    padding: 15px 15px;
+    margin-bottom: 15px;
     border-left-width: 4px;
   }
 
@@ -848,7 +846,7 @@ footer {
   }
 
   .timeline-item, .experience-card {
-    padding: 15px 15px;
+    padding: 15px 12px;
     margin-bottom: 15px;
   }
 
